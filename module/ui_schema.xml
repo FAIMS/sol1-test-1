@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<h:html xmlns:h="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:jr="http://openrosa.org/javarosa" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Fill This In</h:title>
+    <model>
+      <instance>
+        <faims id="Fill_This_In">
+          <style>
+            <orientation>
+              <orientation/>
+            </orientation>
+            <even>
+              <layout_weight/>
+            </even>
+            <large>
+              <layout_weight/>
+            </large>
+          </style>
+          <User>
+            <User>
+              <Select_User/>
+              <Make_Test_Record/>
+            </User>
+          </User>
+          <Test>
+            <Test>
+              <ID/>
+              <Trigger_Autosave/>
+            </Test>
+          </Test>
+          <logic/>
+        </faims>
+      </instance>
+    </model>
+  </h:head>
+  <h:body>
+    <group ref="style">
+      <label/>
+      <group ref="orientation">
+        <label/>
+        <input ref="orientation">
+          <label>horizontal</label>
+        </input>
+      </group>
+      <group ref="even">
+        <label/>
+        <input ref="layout_weight">
+          <label>1</label>
+        </input>
+      </group>
+      <group ref="large">
+        <label/>
+        <input ref="layout_weight">
+          <label>3</label>
+        </input>
+      </group>
+    </group>
+    <group ref="User">
+      <label>{User}</label>
+      <group ref="User" faims_scrollable="false">
+        <label>{User}</label>
+        <select1 ref="Select_User" faims_certainty="false" faims_annotation="false">
+          <label>{Select_User}</label>
+          <item>
+            <label>Options not loaded</label>
+            <value>0</value>
+          </item>
+        </select1>
+        <trigger ref="Make_Test_Record">
+          <label>{Make_Test_Record}</label>
+        </trigger>
+      </group>
+    </group>
+    <group ref="Test" faims_archent_type="Test">
+      <label>{Test}</label>
+      <group ref="Test">
+        <label>{Test}</label>
+        <input faims_attribute_type="measure" ref="ID" faims_attribute_name="ID">
+          <label>{ID}</label>
+        </input>
+        <trigger ref="Trigger_Autosave">
+          <label>{Trigger_Autosave}</label>
+        </trigger>
+      </group>
+    </group>
+  </h:body>
+</h:html>
