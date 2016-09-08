@@ -25,6 +25,7 @@
           <Test>
             <Test>
               <ID/>
+              <Re-Call_SaveTabGroup/>
               <Trigger_Autosave/>
             </Test>
           </Test>
@@ -78,6 +79,9 @@
         <input faims_attribute_type="measure" ref="ID" faims_attribute_name="ID">
           <label>{ID}</label>
         </input>
+        <trigger ref="Re-Call_SaveTabGroup">
+          <label>{Re-Call_SaveTabGroup}</label>
+        </trigger>
         <trigger ref="Trigger_Autosave">
           <label>{Trigger_Autosave}</label>
         </trigger>
