@@ -1,0 +1,105 @@
+digraph {
+	graph [
+		rankdir="LR"
+		fontname="Roboto"
+		splines=ortho
+		outputorder="nodesfirst"
+		ranksep=2
+	];
+	node [
+		fontsize="12"
+		shape=plaintext
+		fontname="Roboto"
+		margin=0
+		shape=none
+	];
+
+	subgraph cluster_b512d97e7c {
+		label="User"
+		bgcolor="lightblue"
+
+		_b512d97e7c [label="" fixedsize=shape width=0 height=0]
+
+		subgraph cluster_ab74b86763 {
+			label=""
+			bgcolor="white"
+			ordering="in"
+
+			struct_Label_ab74b86763 [
+			label=<
+				<TABLE BORDER="1" CELLBORDER="3" CELLSPACING="0" CELLPADDING="5" WIDTH="150" HEIGHT="10">
+					<TR>
+						<TD SIDES="b" ALIGN="TEXT">User</TD>
+					</TR>
+				</TABLE>
+			>];
+
+			struct_Elems_639e8cc20c [
+			label=<
+				<TABLE BORDER="0" CELLSPACING="0" WIDTH="150">
+					<TR><TD PORT="_639e8cc20c"><IMG SRC="User_User_Select_User.svg"/></TD></TR>
+				</TABLE>
+			>];
+
+			struct_Elems_d4dc6a5f3d [
+			label=<
+				<TABLE BORDER="0" CELLSPACING="0" WIDTH="150">
+					<TR><TD PORT="_d4dc6a5f3d"><IMG SRC="User_User_Make_Test_Record.svg"/></TD></TR>
+				</TABLE>
+			>];
+
+		}
+
+	}
+
+	subgraph cluster_532eaabd95 {
+		label="Test"
+		bgcolor="lightblue"
+
+		_532eaabd95 [label="" fixedsize=shape width=0 height=0]
+
+		subgraph cluster_21fa00d8f2 {
+			label=""
+			bgcolor="white"
+			ordering="in"
+
+			struct_Label_21fa00d8f2 [
+			label=<
+				<TABLE BORDER="1" CELLBORDER="3" CELLSPACING="0" CELLPADDING="5" WIDTH="150" HEIGHT="10">
+					<TR>
+						<TD SIDES="b" ALIGN="TEXT">Test</TD>
+					</TR>
+				</TABLE>
+			>];
+
+			struct_Elems_1471a52405 [
+			label=<
+				<TABLE BORDER="0" CELLSPACING="0" WIDTH="150">
+					<TR><TD PORT="_1471a52405"><IMG SRC="Test_Test_ID.svg"/></TD></TR>
+				</TABLE>
+			>];
+
+			struct_Elems_3b40d82e8e [
+			label=<
+				<TABLE BORDER="0" CELLSPACING="0" WIDTH="150">
+					<TR><TD PORT="_3b40d82e8e"><IMG SRC="Test_Test_Re-Call_SaveTabGroup.svg"/></TD></TR>
+				</TABLE>
+			>];
+
+			struct_Elems_040a12bf7a [
+			label=<
+				<TABLE BORDER="0" CELLSPACING="0" WIDTH="150">
+					<TR><TD PORT="_040a12bf7a"><IMG SRC="Test_Test_Trigger_Autosave.svg"/></TD></TR>
+				</TABLE>
+			>];
+
+		}
+
+	}
+
+	/* Intra-tab, label-to-label links */
+	/* Graph-constraining links */
+	_b512d97e7c -> _532eaabd95 [style=invis]
+	/* User-specified links */
+	struct_Elems_d4dc6a5f3d:_d4dc6a5f3d -> struct_Label_21fa00d8f2 [constraint=false]
+}

@@ -65,4 +65,4 @@ saveTabGroup(String tabgroup, String callback) {
 replacement=""
 perl -0777 -i.original -pe "s/\\Q$string/$replacement/igs" ui_logic.bsh
 
-rm ui_logic.original
+rm ui_logic.bsh.original
